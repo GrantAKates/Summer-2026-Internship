@@ -1,0 +1,293 @@
+:root {
+  --superhero: "Bangers", cursive;
+  --fantasy: "MedievalSharp", cursive;
+  --space: "Orbitron", sans-serif;
+  --military: "Black Ops One", cursive;
+  --romantic: "La Belle Aurore", cursive;
+  --scary: "Creepster", cursive;
+  --cowboy: "Rye", cursive;
+  --regular: sans-serif;
+  --fantasy: "MedievalSharp", cursive;
+  --font: var(--regular);
+  --sharp: 0;
+  --soft: 10px;
+  --round: 100px;
+
+  --image: var(--soft);
+
+  --background: #cd5031;
+  --text: #ffda03;
+
+  --light: var(--background);
+  --dark: var(--text);
+}
+
+html {
+  margin: 0;
+  padding: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0 10px;
+
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font);
+}
+
+p {
+}
+
+ul,
+ol {
+  padding: 0 0 0 2rem;
+}
+
+a {
+  color: var(--text);
+}
+
+img {
+  width: 30%;
+  border-radius: calc(var(--image) * 2);
+  border: 8px solid var(--text);
+  border-radius: 20%;
+}
+
+input {
+  border-radius: var(--image);
+  padding: 5px 10px;
+  border: 2px solid var(--text);
+  /* Outer border */
+  background: var(--background);
+  color: var(--text);
+  font-weight: bold;
+  box-sizing: border-box;
+  display: block;
+  margin: 8px 0;
+  cursor: text;
+  font-family: var(--font);
+  width: 160px;
+
+  /* Inner border */
+  box-shadow: inset 0 0 0 2px var(--background);
+}
+
+::placeholder {
+  color: var(--text);
+}
+
+button {
+  border-radius: var(--image);
+  padding: 5px 10px;
+  border: 2px solid var(--text);
+  /* Outer border */
+  background: var(--text);
+  color: var(--background);
+  font-weight: bold;
+  box-sizing: border-box;
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+  font-family: var(--font);
+  width: 160px;
+
+  /* Inner border */
+  box-shadow: inset 0 0 0 2px var(--background);
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+
+  padding: 40px 20px;
+}
+
+/* GAME TITLE BOX TEMPLATE */
+.game-title-banner {
+  /* Layout & Spacing */
+  width: 100%;
+  min-height: 25vh;
+  aspect-ratio: 16/5;
+  max-width: 1080px;
+
+  margin: auto;
+  position: relative;
+
+  /* Alignment & Display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Border */
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 10px;
+
+  /* background */
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+.game-title-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 10%);
+  z-index: 1;
+  pointer-events: none;
+}
+.game-title-banner img {
+  filter: drop-shadow(6px 6px 22px rgba(40, 60, 80, 0));
+  position: relative;
+  z-index: 5;
+}
+/* small image TEMPLATE */
+.small-image {
+  /* Layout & Spacing */
+  min-width: 8/8;
+  margin: 2rem auto;
+  position: relative;
+
+  /* Alignment & Display */
+  display: flex;
+  justify-content: left;
+  align-items: left;
+
+  /* background */
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+.game-title {
+  text-align: center;
+}
+.cool {
+  font-family: "New Rocker", system-ui;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: rgb(235, 45, 45);
+
+  text-shadow: 3px 3px 3px rgb(255, 130, 130);
+}
+.metal {
+  font-family: "New Rocker", system-ui;
+  font-size: 1rem;
+  color: rgb(155, 75, 50);
+}
+.small-image img {
+  width: 25%;
+  height: auto;
+  position: right;
+  border-width: 6px;
+  border-radius: 50%;
+}
+.game-title-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 10%);
+  z-index: 1;
+  pointer-events: none;
+}
+.game-title-banner img {
+  filter: drop-shadow(6px 6px 22px rgba(40, 60, 80, 0));
+  position: relative;
+  z-index: 5;
+  align-items: center;
+}
+
+/*deltarune */
+.logo-box {
+  background-image: url("../images/fountain.png");
+  border-color: #0d47a1;
+}
+
+/* deltarune img size */
+.logo-box img {
+  width: 40%;
+  height: auto;
+  border: none;
+}
+
+/* Celeste */
+.bg-box {
+  background-image: url("../images/mountain.jpg");
+  border-color: #cef1fa;
+}
+
+/* mgrr img size */
+.bg-box img {
+  width: 40%;
+  height: auto;
+  border: none;
+}
+
+/* metal gear */
+.metal_gear-box {
+  background-image: url("../images/mgrr.jpg");
+  border-color: #353e43;
+}
+
+/* MGRR img size */
+.metal_gear-box img {
+  width: 40%;
+  height: auto;
+  border: none;
+  background: rgb(0 0 0 / 15%);
+}
+/*Stardew Vally */
+.stardew-box {
+  background-image: url("../images/sign.jpg");
+  border-color: #e19c00;
+}
+
+/* Stardew img size */
+.stardew-box img {
+  width: 40%;
+  height: auto;
+  border: none;
+}
+/*Terraria*/
+.terraria-box {
+  background-image: url("../images/terraria_bg.png");
+  border-color: #d9dadb;
+}
+
+/* terraria img size */
+.terraria-box img {
+  width: 40%;
+  height: auto;
+  border: none;
+}
+
+/* Individual game backgrounds */
+
+.game-section {
+}
+
+.deltarune-section {
+  background-color: #382f5a;
+}
+
+.celeste-section {
+  background-color: #5d3456;
+}
+
+.metal-gear-section {
+  background-color: #3a4c54;
+}
+
+.stardew-section {
+  background-color: #534834;
+}
+
+.terraria-section {
+  background-color: #293e25;
+}
