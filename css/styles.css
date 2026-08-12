@@ -143,6 +143,13 @@ section {
   z-index: 1;
   pointer-events: none;
 }
+.game-title-banner a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .game-title-banner img {
   filter: drop-shadow(6px 6px 22px rgba(40, 60, 80, 0));
   position: relative;
@@ -169,17 +176,23 @@ section {
   text-align: center;
 }
 .cool {
-  font-family: "New Rocker", system-ui;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  color: rgb(235, 45, 45);
+  font-family: "Metal Mania", system-ui;
+  font-size: 2rem;
+  color: rgb(154, 234, 247);
 
-  text-shadow: 3px 3px 3px rgb(255, 130, 130);
+  text-shadow:
+    2px 2px 0px rgb(0, 3, 99),
+    4px 4px 0px rgb(16, 0, 110),
+    6px 6px 8px rgb(10, 0, 193);
 }
 .metal {
   font-family: "New Rocker", system-ui;
-  font-size: 1rem;
-  color: rgb(155, 75, 50);
+  font-size: 1.5rem;
+  color: rgb(0, 207, 214);
+  text-shadow:
+    2px 2px 0px black,
+    4px 4px 0px rgb(9, 74, 166),
+    6px 6px 8px black;
 }
 .small-image img {
   width: 25%;
@@ -281,7 +294,7 @@ section {
 }
 
 .metal-gear-section {
-  background-color: #3a4c54;
+  background-color: #171f22;
 }
 
 .stardew-section {
@@ -290,4 +303,59 @@ section {
 
 .terraria-section {
   background-color: #293e25;
+}
+
+.task-list,
+.subtask-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list > li {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 2rem;
+}
+
+.task-list > li::before,
+.subtask-list > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+  border: 2px solid #777;
+  border-radius: 0.2rem;
+  background: white;
+}
+
+.subtask-list {
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.subtask-list > li {
+  position: relative;
+  padding: 0.3rem 0 0.3rem 1.75rem;
+  font-size: 0.95em;
+}
+
+.task-list li.complete {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.task-list li.complete::before,
+.subtask-list li.complete::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  color: white;
+  border-color: #358a4b;
+  background: #358a4b;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
 }
