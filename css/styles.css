@@ -25,6 +25,8 @@
 html {
   margin: 0;
   padding: 5px;
+  line-height: 1.2rem;
+  font-size: 1.4rem;
 }
 
 body {
@@ -112,6 +114,8 @@ section {
 /* GAME TITLE BOX TEMPLATE */
 .game-title-banner {
   /* Layout & Spacing */
+  line-height: 1.2rem;
+  font-size: 1.2rem;
   width: 100%;
   min-height: 25vh;
   aspect-ratio: 16/5;
@@ -136,6 +140,8 @@ section {
   /* background-attachment: fixed; */
 }
 .game-title-banner::after {
+  line-height: 1.2rem;
+  font-size: 1.2rem;
   content: "";
   position: absolute;
   inset: 0;
