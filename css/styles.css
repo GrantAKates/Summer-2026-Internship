@@ -261,7 +261,7 @@ section {
   border: none;
   background: rgb(0 0 0 / 15%);
 }
-/*Stardew Vally */
+/*Stardew Valley */
 .stardew-box {
   background-image: url("../images/sign.jpg");
   border-color: #e19c00;
@@ -351,6 +351,9 @@ section {
 .task-list li.complete {
   color: #777;
   text-decoration: line-through;
+}
+.stare {
+  image-width: 100%;
 }
 
 .task-list li.complete::before,
