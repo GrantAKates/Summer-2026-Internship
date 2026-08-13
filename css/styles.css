@@ -352,6 +352,9 @@ section {
   color: #777;
   text-decoration: line-through;
 }
+.stare {
+  image-width: 100%;
+}
 
 .task-list li.complete::before,
 .subtask-list li.complete::before {
